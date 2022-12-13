@@ -49,7 +49,9 @@ html {
 .color-green {
     color: green;
 }
-
+#body{
+    margin-top: 25%;
+}
 #menu {
     display: flex;
     justify-content: space-between;
