@@ -12,18 +12,20 @@ body {
     color: #000000;
     text-align: left;
     background-color: #F3F3F3;
-  }
+}
+
 html {
     font-family: sans-serif;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
+}
+
 #superior1 {
     width: 100%;
     height: 100px;
     background-color: rgb(191, 191, 191);
-    position: absolute;
+    position: fixed;
 }
 
 #sup-contacto {
@@ -43,41 +45,47 @@ html {
     padding-left: 40px;
     font-size: 40px;
 }
-.color-green{
+
+.color-green {
     color: green;
 }
 
 #menu {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 0;
     width: 50%;
-    margin:auto;
+    margin: auto;
     float: right;
     margin-top: -80px;
 }
-#menu li a{
-   text-decoration: none;
-   color: white;
-   padding: 30px;
-   display: block;
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 30px;
+    display: block;
 }
+
 #menu li {
     display: inline-block;
     text-align: center;
-    padding-left:30px;
+    padding-left: 30px;
 }
-.logo{
+
+.logo {
     position: absolute;
     width: 80px;
-    margin-left:50px;
+    margin-left: 50px;
     margin-top: 10px;
 }
+
 #logowhite {
     opacity: 0;
 }
-#logowhite:hover{
+
+#logowhite:hover {
     opacity: 100%;
     transition-duration: 0.4s;
 }
