@@ -58,14 +58,17 @@ html {
     list-style: none;
     padding: 0;
     width: 50%;
-    margin: auto;
+    margin: 0 auto;
     float: right;
-    margin-top: -80px;
+    margin-top: -100px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: pre;
 }
 
 #menu li a {
     text-decoration: none;
-    color: white;
+    color: black;
     padding: 30px;
     display: block;
 }
@@ -74,6 +77,10 @@ html {
     display: inline-block;
     text-align: center;
     padding-left: 30px;
+}
+
+#menu li a:hover{
+	background-color: grey;
 }
 
 .logo {
@@ -90,4 +97,14 @@ html {
 #logowhite:hover {
     opacity: 100%;
     transition-duration: 0.4s;
+}
+
+.cube {
+	margin: 15px;
+	width: 33%;
+	padding-left: 3%;
+    background-color: rgb(191, 191, 191);
+}
+.body {
+ //hay que alinear pero npi y estoy hasta la P*
 }
