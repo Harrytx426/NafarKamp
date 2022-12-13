@@ -49,8 +49,8 @@ html {
 .color-green {
     color: green;
 }
-#body{
-    margin-top: 25%;
+.body{
+    padding-top: 130px;
 }
 #menu {
     display: flex;
