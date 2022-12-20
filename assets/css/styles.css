@@ -1,0 +1,235 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #090909;
+    z-index: 0;
+
+}
+/* Arriba Olas */
+.arriba1 {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 5;
+}
+
+.arriba1 svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 2px);
+    height:140px;
+}
+
+.arriba1 .relleno_arriba {
+    fill: #266124;
+}
+
+/* Contenedor general */
+.container {
+    width: min(100% - 15px, 840px);
+    margin-inline: auto;
+    position: relative;
+}
+
+/* COLORES */
+.color-green {
+    color: rgb(16, 69, 16);
+}
+
+/* Menú  navegación */
+
+.navbar {
+    position: absolute;
+    margin-top: 30px;
+    display: flex;
+    z-index: 5;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 15px;
+    border-radius: 30px;
+    margin-left: 5px;
+    padding-right: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+#nafarnav {
+    font-size: xx-large;
+    margin-left: 30px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler, .navbar label {
+    display: none;
+}
+
+.list a:hover{
+    color: #266124;
+    border-bottom: #266124 3px solid;
+    padding-bottom: 3px;
+}
+@media screen and (max-width: 800px){
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        z-index: 30;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+       
+    }
+
+    
+}
+/* Zona Superior, imagen, texto y boton de reservas */
+#zona_superior {
+    position:absolute;
+    background: url(/assets/imagenes/fondo_arriba_BORROSO.jpg.png) no-repeat ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    height: 500px;
+    z-index: 3;
+    position: absolute;
+    display: grid;
+    place-content: center;  
+    text-align: center;
+}
+
+.arribatxt h1{
+    font-size: 600%;
+    color: white;
+
+}
+.arribatxt h2{
+    font-size: 200%;
+    color: rgb(130, 205, 153);
+    margin-top: -40px;
+    text-shadow: 0.5px  0px 0px black,
+               0px  0.5px 0px black,
+              -0.5px  0px 0px black,
+               0px -0.5px 0px black;
+    opacity: 90%;
+}
+
+#boton_reserva {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #080808;
+    border: #ffffff6e 1px solid;
+}
+
+#boton_reserva a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Bungalows superior */
+.contenedor {
+    width: max-content;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+.card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 200px;
+    display: inline;
+
+}
+.card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-body {
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 250px;
+}
+
+.tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.tag-teal {
+    background-color: #47bcd4;
+}
+.tag-purple {
+    background-color: #5e76bf;
+}
+.tag-pink {
+    background-color: #cd5b9f;
+}
+
+.card-body p {
+    font-size: 13px;
+    margin: 0 0 40px;
+}
+.user {
+    display: flex;
+    margin-top: auto;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.user-info h5 {
+    margin: 0;
+}
+.user-info small {
+    color: #545d7a;
+}
