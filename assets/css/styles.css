@@ -4,15 +4,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Poppins", sans-serif;
     background-color: #090909;
     z-index: 0;
 
 }
+
 /* Arriba Olas */
 .arriba1 {
-    position:absolute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -26,7 +28,7 @@ body {
     position: relative;
     display: block;
     width: calc(300% + 2px);
-    height:140px;
+    height: 140px;
 }
 
 .arriba1 .relleno_arriba {
@@ -72,7 +74,7 @@ body {
     margin-left: 30px;
 }
 
-.list{
+.list {
     list-style: none;
     display: flex;
     gap: 25px;
@@ -82,66 +84,76 @@ body {
     display: none;
 }
 
-.list a:hover{
+.list a:hover {
     color: #266124;
     border-bottom: #266124 3px solid;
     padding-bottom: 3px;
 }
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 800px) {
     .menu {
         width: 100%;
         max-height: 0;
         overflow: hidden;
         position: relative;
     }
-    .list{
+
+    .list {
         flex-direction: column;
         align-items: center;
         padding: 20px;
         z-index: 30;
     }
-    .navbar label{
+
+    .navbar label {
         display: inline-flex;
         align-items: center;
         cursor: pointer;
         margin-right: 20px;
     }
-    #toggler:checked ~ .menu {
+
+    #toggler:checked~.menu {
         max-height: 100%;
-       
+
     }
 
-    
+
 }
+
+#titulo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 /* Zona Superior, imagen, texto y boton de reservas */
 #zona_superior {
-    position:absolute;
-    background: url(/assets/imagenes/fondo_arriba_BORROSO.jpg.png) no-repeat ;
+    background: url(/assets/imagenes/fondo_arriba_BORROSO.jpg.png) no-repeat;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 100%;
     height: 500px;
     z-index: 3;
-    position: absolute;
     display: grid;
-    place-content: center;  
+    place-content: center;
     text-align: center;
 }
 
-.arribatxt h1{
+.arribatxt h1 {
     font-size: 600%;
     color: white;
 
 }
-.arribatxt h2{
+
+.arribatxt h2 {
     font-size: 200%;
     color: rgb(130, 205, 153);
     margin-top: -40px;
-    text-shadow: 0.5px  0px 0px black,
-               0px  0.5px 0px black,
-              -0.5px  0px 0px black,
-               0px -0.5px 0px black;
+    text-shadow: 0.5px 0px 0px black,
+        0px 0.5px 0px black,
+        -0.5px 0px 0px black,
+        0px -0.5px 0px black;
     opacity: 90%;
 }
 
@@ -165,7 +177,8 @@ body {
     width: max-content;
     justify-content: space-evenly;
     flex-wrap: wrap;
-  }
+}
+
 .card {
     margin: 10px;
     background-color: #fff;
@@ -176,14 +189,15 @@ body {
     display: inline;
 
 }
+
 .card-header img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
+
 .card-body {
     display: flex;
-    
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -202,12 +216,15 @@ body {
     cursor: pointer;
 
 }
+
 .tag-teal {
     background-color: #47bcd4;
 }
+
 .tag-purple {
     background-color: #5e76bf;
 }
+
 .tag-pink {
     background-color: #cd5b9f;
 }
@@ -216,6 +233,7 @@ body {
     font-size: 13px;
     margin: 0 0 40px;
 }
+
 .user {
     display: flex;
     margin-top: auto;
@@ -227,9 +245,106 @@ body {
     height: 40px;
     margin-right: 10px;
 }
+
 .user-info h5 {
     margin: 0;
 }
+
 .user-info small {
     color: #545d7a;
+}
+
+.body {
+    padding-top: 130px;
+    display: flex;
+}
+
+#bloqueMenu {
+    width: 100%;
+}
+
+#menu {
+    padding-top: 20px;
+    margin: 0px;
+    float: right;
+    height: 54px;
+    overflow: hidden;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    line-height: 4rem;
+}
+
+#menu li {
+    display: inline-block;
+    text-align: center;
+    padding-left: 30px;
+}
+
+.logo {
+    position: absolute;
+    width: 80px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+#logowhite {
+    opacity: 0;
+}
+
+#logowhite:hover {
+    opacity: 100%;
+    transition-duration: 0.4s;
+}
+
+.cube {
+    margin-top: 15px;
+    padding: 3%;
+    background-color: rgb(191, 191, 191);
+    border-radius: 20px;
+}
+
+.cube img {
+    width: 55%;
+}
+
+.bungalowsImg img {
+    float: left;
+}
+
+.tiposBungalows {
+    text-align: center;
+}
+
+#contenedorCM {
+    width: 75%;
+    display: inline-block;
+}
+
+.imgcube {
+    display: inline-flex;
+}
+
+.imagenes {
+    justify-content: center;
+}
+
+.imagenes img {
+    width: 60%;
+}
+
+#mxCubeM {
+    width: 60%;
+}
+
+#mapa {
+    width: 25%;
+    height: 80%;
+    float: right;
+    display: flex;
+    margin: 0 auto;
+    justify-content:center
 }
